@@ -21,7 +21,7 @@ type Config struct {
 func MustLoad() *Config {
 	configPath := os.Getenv("CONFIG_PATH")
 	if configPath == "" {
-		flags := flag.String("cofing", "", "path to the configuration file")
+		flags := flag.String("config", "", "path to the configuration file")
 		flag.Parse()
 		configPath = *flags
 		if configPath == "" {
